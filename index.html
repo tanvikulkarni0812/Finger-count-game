@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>JAVASCRIPT GAME</title>
+        <link rel="stylesheet" href="how-many-fingers.css">
+
+        <body>
+
+            <h1>How Many Fingers Am I Holding Up</h1>
+
+            <p><input type="text" id="guess"> <button id="CheckGuess">Guess!!</button></p>
+
+
+            <script type="text/javascript">
+                document.getElementById("CheckGuess").onclick = function(){
+                    var randomnumber = Math.random();
+                    randomnumber = randomnumber * 6;
+                    randomnumber = Math.floor(randomnumber);
+                    if(document.getElementById("guess").value == randomnumber){
+                        alert("well done!! you got it!");
+                    } else{
+                        alert("nope! The number was = " + randomnumber);
+                    }
+                }
+            </script>
+
+        </body>
+    </head>
+</html>

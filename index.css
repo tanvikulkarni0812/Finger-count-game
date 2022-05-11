@@ -1,0 +1,15 @@
+body{
+    margin:0 auto;
+    width:1000px;
+    padding:7px;
+}
+
+h1{
+    padding:3px;
+    font-weight:normal;
+    font-size:25px;
+}
+
+#CheckGuess{
+    box-sizing: border-box;
+}
